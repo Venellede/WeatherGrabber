@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1bc6004c-db70-4e1a-8677-04d6d56eed44" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50050/WeatherGrabberService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WeatherGrabberService.xsd" MetadataType="Schema" ID="a3c3a5bb-f54a-4443-8915-053f63f04594" SourceId="1" SourceUrl="http://localhost:50050/WeatherGrabberService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WeatherGrabberService1.xsd" MetadataType="Schema" ID="42f2e9f0-63fa-418d-b802-5940809f1f24" SourceId="1" SourceUrl="http://localhost:50050/WeatherGrabberService.svc?xsd=xsd3" />
+    <MetadataFile FileName="WeatherGrabberService.disco" MetadataType="Disco" ID="62467a35-29fe-4437-ac55-cdc84dcdb7c0" SourceId="1" SourceUrl="http://localhost:50050/WeatherGrabberService.svc?disco" />
+    <MetadataFile FileName="WeatherGrabberService.wsdl" MetadataType="Wsdl" ID="3e30da1a-7c2a-46bd-acf9-9cc5a0b829a6" SourceId="1" SourceUrl="http://localhost:50050/WeatherGrabberService.svc?wsdl" />
+    <MetadataFile FileName="WeatherGrabberService2.xsd" MetadataType="Schema" ID="dc33dde0-cd03-4528-af53-caa4d49bacdd" SourceId="1" SourceUrl="http://localhost:50050/WeatherGrabberService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WeatherGrabberService3.xsd" MetadataType="Schema" ID="2b2697fc-e67b-4005-8291-f7a1e5bb9058" SourceId="1" SourceUrl="http://localhost:50050/WeatherGrabberService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WeatherGrabberService4.xsd" MetadataType="Schema" ID="a7e2c499-d971-4c6e-8b7e-ab2e22ef3c85" SourceId="1" SourceUrl="http://localhost:50050/WeatherGrabberService.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

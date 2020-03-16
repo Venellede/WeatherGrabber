@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configurationSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-wcfconfigurationsnapshot">
+  <behaviors />
+  <bindings>
+    <binding digest="System.ServiceModel.Configuration.WSHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;WSHttpBinding_IWeatherGrabberService&quot; /&gt;" bindingType="wsHttpBinding" name="WSHttpBinding_IWeatherGrabberService" />
+  </bindings>
+  <endpoints>
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://localhost:50050/WeatherGrabberService.svc&quot; binding=&quot;wsHttpBinding&quot; bindingConfiguration=&quot;WSHttpBinding_IWeatherGrabberService&quot; contract=&quot;WeatherGrabbberClient.IWeatherGrabberService&quot; name=&quot;WSHttpBinding_IWeatherGrabberService&quot;&gt;&lt;identity&gt;&lt;userPrincipalName value=&quot;DESKTOP-4PS43JC\AnVi&quot; /&gt;&lt;/identity&gt;&lt;/Data&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://localhost:50050/WeatherGrabberService.svc&quot; binding=&quot;wsHttpBinding&quot; bindingConfiguration=&quot;WSHttpBinding_IWeatherGrabberService&quot; contract=&quot;WeatherGrabbberClient.IWeatherGrabberService&quot; name=&quot;WSHttpBinding_IWeatherGrabberService&quot;&gt;&lt;identity&gt;&lt;userPrincipalName value=&quot;DESKTOP-4PS43JC\AnVi&quot; /&gt;&lt;/identity&gt;&lt;/Data&gt;" contractName="WeatherGrabbberClient.IWeatherGrabberService" name="WSHttpBinding_IWeatherGrabberService" />
+  </endpoints>
+</configurationSnapshot>

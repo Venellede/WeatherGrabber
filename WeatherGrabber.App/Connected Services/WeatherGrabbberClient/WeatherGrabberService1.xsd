@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WeatherGrabber.WCF.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WeatherGrabber.WCF.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Weather">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GeoM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Humidity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Precipitation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pressure" nillable="true" type="tns:ArrayOfPressure" />
+      <xs:element minOccurs="0" name="Temperatures" nillable="true" type="tns:ArrayOfTemperature" />
+      <xs:element minOccurs="0" name="Tip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Uvb" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Wind" nillable="true" type="tns:ArrayOfWind" />
+      <xs:element minOccurs="0" name="WindDirection" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Weather" nillable="true" type="tns:Weather" />
+  <xs:complexType name="ArrayOfPressure">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Pressure" nillable="true" type="tns:Pressure" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPressure" nillable="true" type="tns:ArrayOfPressure" />
+  <xs:complexType name="Pressure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Measurement" type="tns:PressureMeasurement" />
+      <xs:element minOccurs="0" name="RangeSide" type="tns:RangeSide" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pressure" nillable="true" type="tns:Pressure" />
+  <xs:simpleType name="PressureMeasurement">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MmHgAtm" />
+      <xs:enumeration value="Pa" />
+      <xs:enumeration value="InHg" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PressureMeasurement" nillable="true" type="tns:PressureMeasurement" />
+  <xs:simpleType name="RangeSide">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Min" />
+      <xs:enumeration value="Max" />
+      <xs:enumeration value="Average" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RangeSide" nillable="true" type="tns:RangeSide" />
+  <xs:complexType name="ArrayOfTemperature">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Temperature" nillable="true" type="tns:Temperature" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTemperature" nillable="true" type="tns:ArrayOfTemperature" />
+  <xs:complexType name="Temperature">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Measurement" type="tns:TemperatureMeasurement" />
+      <xs:element minOccurs="0" name="RangeSide" type="tns:RangeSide" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Temperature" nillable="true" type="tns:Temperature" />
+  <xs:simpleType name="TemperatureMeasurement">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Celsius" />
+      <xs:enumeration value="Fahrenheit" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TemperatureMeasurement" nillable="true" type="tns:TemperatureMeasurement" />
+  <xs:complexType name="ArrayOfWind">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Wind" nillable="true" type="tns:Wind" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWind" nillable="true" type="tns:ArrayOfWind" />
+  <xs:complexType name="Wind">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsGust" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Measurement" type="tns:WindMeasurement" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Wind" nillable="true" type="tns:Wind" />
+  <xs:simpleType name="WindMeasurement">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MS" />
+      <xs:enumeration value="MiH" />
+      <xs:enumeration value="KmH" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="WindMeasurement" nillable="true" type="tns:WindMeasurement" />
+</xs:schema>
